@@ -1,0 +1,2 @@
+# void.files
+void dotfiles
