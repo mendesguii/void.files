@@ -1,0 +1,74 @@
+configuration {
+  display-drun: "Search: ";
+  font: "FiraCode Nerd Font Medium 10";
+  modi: "drun";
+  show-icons: true;
+}
+
+* {
+  bg: #282a36;
+  bg-alt: #44475a;
+  fg: #f8f8f2;
+  blue: #6272a4;
+  purple: #bd93f9;
+  background-color: @bg;
+  red:#ff5555; 
+  green:#50fa7b;
+  curline:#44475a;
+  
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+}
+
+element {
+  padding: 12;
+  text-color: @blue;
+}
+
+element selected {
+  text-color: @purple;
+}
+
+element-text {
+  background-color: inherit;
+  text-color: inherit;
+}
+
+element.normal.normal,element.alternate.normal {
+  text-color: @fg;
+  background-color: inherit;
+}
+
+entry {
+  background-color: @curline;
+  padding: 12 0 12 3;
+  text-color: @fg;
+}
+
+inputbar {
+  children: [prompt, entry];
+}
+
+listview {
+  columns: 1;
+  lines: 8;
+  scrollbar:false;
+}
+
+mainbox {
+  children: [inputbar, listview];
+}
+
+prompt {
+  background-color: @curline;
+  enabled: true;
+  padding: 12 0 0 12;
+  text-color: @red;
+}
+#window {
+    background-color: @bg;
+    border:           1;
+    border-color: @curline;
+}
