@@ -1,5 +1,5 @@
 #!/bin/bash
-
+echo "MUST BE RUN AS SUDO IF 2 OPTION IS REQUIRED"
 read -r -p "Copy to folder (1) // Copy to system (2): " choice
 
 case $choice in 
@@ -13,11 +13,11 @@ case $choice in
 	cp -f $HOME/.bash_profile .
 	cp -rf $HOME/.wallpapers .
 	cp -rf $HOME/.fonts .
-	cp -rf /usr/share/bumblebee-status . ;;	
+	cp -rf /usr/share/bumblebee-status .	
+	cp -rf /usr/share/X11/xorg.conf.d . ;;
 
 	# Copying to the system.
         2)
-	sudo -s
 	cp -rf i3 $HOME/.config
 	cp -rf alacritty $HOME/.config
 	cp -rf rofi $HOME/.config
@@ -27,7 +27,8 @@ case $choice in
 	cp -f .bash_profile $HOME 
 	cp -rf .wallpapers $HOME 
 	cp -rf .fonts $HOME
-	cp -rf bumblebee-status /usr/share ;;	
+	cp -rf bumblebee-status /usr/share 
+	cp -rf xorg.conf.d /usr/share/X11 ;;	
 
 
 esac
