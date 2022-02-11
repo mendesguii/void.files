@@ -131,6 +131,7 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
+# Bar for primary display
 bar {
 
 colors {
@@ -152,6 +153,7 @@ colors {
      -p time.format="%H:%M | %d/%m" nic.format=" [{ip}] {ssid}" nic.states="^down" memory.format="{used}" battery-upower.showremaining="True" xrandr.exclude="LVDS1"  \
      -t dracula-powerline
 }
+
 #Executing
 exec "xset s off"
 exec "xset -dpms"
