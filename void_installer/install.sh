@@ -6,7 +6,7 @@ xbps-install -Su
 
 # Installing Core packages
 
-xbps-install git i3-gaps xorg xf86-video-intel alacritty chromium firefox xrandr arandr pavucontrol neovim python3 bumblebee-status feh rofi neofetch tlp openntpd unzip xinput
+xbps-install git i3-gaps xorg xf86-video-intel alacritty chromium firefox xrandr arandr pavucontrol neovim python3 bumblebee-status feh rofi neofetch tlp chrony unzip xinput
 # removing
 xbps-remove dmenu
 
