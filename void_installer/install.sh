@@ -13,5 +13,4 @@ xbps-remove dmenu
 # time configuration (Must DO)
 
 ln -s /etc/sv/openntpd /var/service/
-#it might be required to add a sleep before starting the service on config file => exec sleep 5; openntpd -d ${OPTS} 2>&1
 sv start openntpd
