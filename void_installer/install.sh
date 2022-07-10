@@ -14,3 +14,8 @@ xbps-remove dmenu
 
 ln -s /etc/sv/openntpd /var/service/
 sv start openntpd
+
+echo "Creating a SSH key for github"
+ssh-keygen -o -t rsa -C "guilhermemendes789@gmail.com"
+
+echo "~ Install Script Finished ~"
