@@ -7,6 +7,7 @@ case $choice in
 	cp -rf $HOME/.config/i3 .
 	cp -rf $HOME/.config/alacritty .
 	cp -rf $HOME/.config/rofi .
+	cp -rf $HOME/.config/compton .
 	cp -rf $HOME/.config/nvim .
 	cp -f $HOME/.xinitrc .
 	cp -f $HOME/.bashrc .
@@ -21,6 +22,7 @@ case $choice in
 	cp -rf i3 $HOME/.config
 	cp -rf alacritty $HOME/.config
 	cp -rf rofi $HOME/.config
+	cp -rf compton $HOME/.config
 	cp -rf nvim $HOME/.config
 	cp -f .xinitrc $HOME
 	cp -f .bashrc $HOME

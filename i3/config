@@ -161,3 +161,4 @@ colors {
 exec "xset s off"
 exec "xset -dpms"
 exec feh --bg-fill ~/.wallpapers/$(ls ~/.wallpapers | shuf -n 1)
+exec --no-startup-id compton --opacity-rule '100:window_type = "dock" && class_g = "i3bar"' --config ~/.config/compton.conf -b
