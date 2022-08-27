@@ -3,10 +3,9 @@ echo "MUST BE RUN AS SUDO"
 # Update packages
 
 xbps-install -Su
-
 xbps-install -u xbps
-
 xbps-install -Su void-repo-nonfree void-repo-multilib
+xbps-install -Su
 
 read -r -p "1 - X220 | 2 - Desktop " choice
 
