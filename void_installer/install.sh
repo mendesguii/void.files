@@ -16,15 +16,15 @@ case $choice in
 	1)
 	xbps-install i3-gaps pulseaudio xorg xf86-video-intel alacritty chromium firefox xrandr arandr pavucontrol neovim python3 bumblebee-status feh rofi neofetch tlp chrony xinput qbittorrent p7zip compton fish-shell pulseaudio;;
 	2) 
-	xbps-install i3-gaps pulseaudio xorg alacritty firefox xrandr arandr pavucontrol neovim python3 bumblebee-status feh rofi neofetch chrony xinput qbittorrent p7zip compton fish-shell steam nvidia ;; 
+	xbps-install i3-gaps pulseaudio xorg alacritty firefox xrandr arandr pavucontrol neovim python3 bumblebee-status feh rofi neofetch chrony xinput qbittorrent p7zip compton fish-shell libgcc-32bit libstdc++-32bit libdrm-32bit libglvnd-32bit steam nvidia ;; 
 
 esac
 
 sleep 5
 
 #configuring fish
-echo /usr/local/bin/fish | sudo tee -a /etc/shells
-chsh -s /usr/bin/fish
+echo /bin/fish | sudo tee -a /etc/shells
+chsh -s /bin/fish
 
 echo "Setting service for NTPD(Chrony)"
 # time configuration (Must DO)
