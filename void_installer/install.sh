@@ -4,8 +4,17 @@ echo "MUST BE RUN AS SUDO"
 
 xbps-install -Su
 
+
+read -r -p "1 - X220 // 2 - Desktop " choice
+
 # Installing Core packages
-xbps-install git i3-gaps xorg xf86-video-intel alacritty chromium firefox xrandr arandr pavucontrol neovim python3 bumblebee-status feh rofi neofetch tlp chrony unzip xinput qbittorrent pz7ip compton fish 
+case $choice in 
+	1)
+	xbps-install git i3-gaps xorg xf86-video-intel alacritty chromium firefox xrandr arandr pavucontrol neovim python3 bumblebee-status feh rofi neofetch tlp chrony unzip xinput qbittorrent pz7ip compton fish
+	2) 
+	xbps-install git i3-gaps xorg alacritty firefox xrandr arandr pavucontrol neovim python3 bumblebee-status feh rofi neofetch tlp chrony unzip xinput qbittorrent pz7ip compton fish steam void-repo-nonfree void-repo-multilib nvidia 
+
+esac
 
 
 #configuring fish
