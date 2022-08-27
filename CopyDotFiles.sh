@@ -20,19 +20,19 @@ case $choice in
 
 	# Copying to the system.
         2)
-	cp -rf i3 $HOME/.config
-	cp -rf alacritty $HOME/.config
-	cp -rf rofi $HOME/.config
-	cp -rf compton $HOME/.config
-	cp -rf nvim $HOME/.config
-	cp -rf fish $HOME/.config
+	cp -rf i3 $HOME/.config/
+	cp -rf alacritty $HOME/.config/
+	cp -rf rofi $HOME/.config/
+	cp -rf compton $HOME/.config/
+	cp -rf nvim $HOME/.config/
+	cp -rf fish $HOME/.config/
 	cp -f .xinitrc $HOME
 	cp -f .bashrc $HOME
 	cp -f .bash_profile $HOME 
 	cp -rf .wallpapers $HOME 
 	cp -rf .fonts $HOME
-	cp -rf bumblebee-status /usr/share 
-	cp -rf xorg.conf.d /usr/share/X11 ;;	
+	cp -rf bumblebee-status /usr/share/ 
+	cp -rf xorg.conf.d /usr/share/X11/ ;;	
 
 
 esac
