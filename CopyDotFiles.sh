@@ -9,6 +9,7 @@ case $choice in
 	cp -rf $HOME/.config/rofi .
 	cp -rf $HOME/.config/compton .
 	cp -rf $HOME/.config/nvim .
+	cp -rf $HOME/.config/fish .
 	cp -f $HOME/.xinitrc .
 	cp -f $HOME/.bashrc .
 	cp -f $HOME/.bash_profile .
@@ -24,6 +25,7 @@ case $choice in
 	cp -rf rofi $HOME/.config
 	cp -rf compton $HOME/.config
 	cp -rf nvim $HOME/.config
+	cp -rf fish $HOME/.config
 	cp -f .xinitrc $HOME
 	cp -f .bashrc $HOME
 	cp -f .bash_profile $HOME 

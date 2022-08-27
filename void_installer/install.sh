@@ -5,7 +5,12 @@ echo "MUST BE RUN AS SUDO"
 xbps-install -Su
 
 # Installing Core packages
-xbps-install git i3-gaps xorg xf86-video-intel alacritty chromium firefox xrandr arandr pavucontrol neovim python3 bumblebee-status feh rofi neofetch tlp chrony unzip xinput qbittorrent pz7ip compton 
+xbps-install git i3-gaps xorg xf86-video-intel alacritty chromium firefox xrandr arandr pavucontrol neovim python3 bumblebee-status feh rofi neofetch tlp chrony unzip xinput qbittorrent pz7ip compton fish 
+
+
+#configuring fish
+echo /usr/local/bin/fish | sudo tee -a /etc/shells
+chsh -s /usr/bin/fish
 
 # removing
 xbps-remove dmenu
