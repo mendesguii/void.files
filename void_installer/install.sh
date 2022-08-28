@@ -5,6 +5,7 @@ echo "MUST BE RUN AS SUDO"
 xbps-install -Su
 xbps-install -u xbps
 xbps-install -Su void-repo-nonfree void-repo-multilib
+xbps-install -S void-repo-multilib{,-nonfree}
 xbps-install -Su
 
 read -r -p "1 - X220 | 2 - Desktop " choice
@@ -15,7 +16,7 @@ case $choice in
 	1)
 	xbps-install i3-gaps pulseaudio xorg xf86-video-intel alacritty chromium firefox xrandr arandr pavucontrol neovim python3 bumblebee-status feh rofi neofetch tlp chrony xinput qbittorrent p7zip compton fish-shell pulseaudio;;
 	2) 
-	xbps-install i3-gaps pulseaudio xorg alacritty firefox xrandr arandr pavucontrol neovim python3 bumblebee-status feh rofi neofetch chrony xinput qbittorrent p7zip compton fish-shell libgcc-32bit libstdc++-32bit libdrm-32bit libglvnd-32bit steam nvidia ;; 
+	xbps-install i3-gaps pulseaudio xorg alacritty firefox xrandr arandr pavucontrol neovim python3 bumblebee-status feh rofi neofetch chrony xinput qbittorrent p7zip compton fish-shell libgcc-32bit libstdc++-32bit libdrm-32bit libglvnd-32bit steam nvidia nvidia-libs-32bit ;; 
 
 esac
 
@@ -27,8 +28,8 @@ chsh -s /bin/fish
 
 echo "Setting service for NTPD(Chrony)"
 # time configuration (Must DO)
-ln -s /etc/sv/chronyc /var/service/
-sv start chronyc
+ln -s /etc/sv/chronyd /var/service/
+sv start chronyd
 
 echo "Creating a SSH key for github"
 mkdir ~/.ssh
