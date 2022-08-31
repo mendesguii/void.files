@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "Creating a SSH key for github"
+mkdir ~/.ssh
+cd ~/.ssh
+ssh-keygen -o -t rsa -C "guilhermemendes789@gmail.com" -f ~/.ssh/id_rsa
+echo "Copy this ssh key to github"
+cat ~/.ssh/id_rsa.pub
