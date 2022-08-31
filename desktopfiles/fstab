@@ -1,4 +1,0 @@
-UUID=a8dd1891-62ec-40e2-9291-9565ba46ec29 / ext4 defaults 0 1
-UUID=C07C-BA3A /boot/efi vfat defaults 0 2
-tmpfs /tmp tmpfs defaults,nosuid,nodev 0 0
-UUID=807617f8-89e9-4d4f-a985-658ac6fb437a /home/hxn/secdrive ext4 defaults 0 3 
