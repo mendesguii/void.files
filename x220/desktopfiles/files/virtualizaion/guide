@@ -1,7 +1,0 @@
-xbps-install qemu libvirt virt-manager dnsmasq
-sleep 5
-ln -s /etc/sv/dbus /var/service
-ln -s /etc/sv/libvirtd /var/service
-ln -s /etc/sv/virtlockd /var/service
-ln -s /etc/sv/virtlogd /var/service
-sudo usermod -a -G libvirt hxn

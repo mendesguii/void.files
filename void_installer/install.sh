@@ -22,20 +22,13 @@ esac
 
 sleep 5
 
-#configuring fish
+# Configuring fish
 echo /bin/fish | sudo tee -a /etc/shells
 chsh -s /bin/fish
 
 echo "Setting service for NTPD(Chrony)"
-# time configuration (Must DO)
+# Chrony config
 ln -s /etc/sv/chronyd /var/service/
 sv start chronyd
-
-echo "Creating a SSH key for github"
-mkdir ~/.ssh
-cd ~/.ssh
-cd ..
-chown hxn .ssh
-ssh-keygen -o -t rsa -C "guilhermemendes789@gmail.com"
 
 echo "~ Install Script Finished ~"

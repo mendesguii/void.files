@@ -149,11 +149,10 @@ colors {
     binding_mode       #FF5555 #FF5555 #F8F8F2
   }
 	position top
-	output primary
-	font pango:FiraCode Nerd Font 8
+	font pango:FiraCode Nerd Font 12
 	status_command /usr/bin/bumblebee-status \
-     -m cpu memory nic pasink pasource xrandr battery time \
-     -p time.format="%H:%M | %d/%m" nic.format=" [{ip}] {ssid}" nic.states="^down" memory.format="{used}" battery-upower.showremaining="True" xrandr.exclude="LVDS1"  \
+     -m cpu memory nic pasink pasource xrandr time \
+     -p time.format="%H:%M | %d/%m" nic.format=" [{ip}] {ssid}" nic.states="^down" memory.format="{used}" battery-upower.showremaining="True" xrandr.exclude="HDMI-1"  \
      -t dracula-powerline
 }
 
