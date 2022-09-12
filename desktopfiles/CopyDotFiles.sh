@@ -7,9 +7,10 @@ case $choice in
 	cp -rf $HOME/.config/i3 .
 	cp -rf $HOME/.config/alacritty .
 	cp -rf $HOME/.config/rofi .
-	cp -rf $HOME/.config/compton .
+	cp -rf $HOME/.config/picom .
 	cp -rf $HOME/.config/nvim .
 	cp -rf $HOME/.config/fish .
+	cp -rf $HOME/.config/dunst .
 	cp -f $HOME/.xinitrc .
 	cp -f $HOME/.bashrc .
 	cp -f $HOME/.bash_profile .
@@ -23,9 +24,10 @@ case $choice in
 	cp -rf i3/ $HOME/.config/
 	cp -rf alacritty/ $HOME/.config/
 	cp -rf rofi/ $HOME/.config/
-	cp -rf compton/ $HOME/.config/
+	cp -rf picom/ $HOME/.config/
 	cp -rf nvim/ $HOME/.config/
 	cp -rf fish/ $HOME/.config/
+	cp -rf dunst/ $HOME/.config/
 	cp -f .xinitrc $HOME
 	cp -f .bashrc $HOME
 	cp -f .bash_profile $HOME 

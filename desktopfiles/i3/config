@@ -2,7 +2,11 @@ set $mod Mod4
 
 #Title Remover
 for_window [class="^.*"] border pixel 2
+
 new_window 1pixel
+gaps inner 10
+
+
 
 #### COLORS ####
 # class                 border  bground text    indicator child_border
@@ -160,4 +164,5 @@ colors {
 exec "xset s off"
 exec "xset -dpms"
 exec feh --bg-fill ~/.wallpapers/$(ls ~/.wallpapers | shuf -n 1)
-exec_always --no-startup-id "compton -b"
+exec_always --no-startup-id "compton --config ~/.config/picom/picom.conf"
+exec dunst
