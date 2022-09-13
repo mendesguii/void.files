@@ -50,6 +50,9 @@ bindsym $mod+d exec rofi -show
 bindsym $mod+F1 exec setxkbmap us
 bindsym $mod+F2 exec setxkbmap -model abnt2 -layout br -variant abnt2
 
+#Change Randomly the Wallpaper
+bindsym $mod+F12 exec feh --bg-fill ~/.wallpapers/$(ls ~/.wallpapers | shuf -n 1)
+
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
@@ -164,5 +167,5 @@ colors {
 exec "xset s off"
 exec "xset -dpms"
 exec feh --bg-fill ~/.wallpapers/$(ls ~/.wallpapers | shuf -n 1)
-exec_always --no-startup-id "compton --config ~/.config/picom/picom.conf"
+exec_always --no-startup-id "picom -b"
 exec dunst

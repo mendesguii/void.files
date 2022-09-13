@@ -4,37 +4,41 @@ read -r -p "Copy to folder (1) // Copy to system (2): " choice
 
 case $choice in 
 	1)# Copying to this folder
-	cp -rf $HOME/.config/i3 .
-	cp -rf $HOME/.config/alacritty .
-	cp -rf $HOME/.config/rofi .
-	cp -rf $HOME/.config/picom .
-	cp -rf $HOME/.config/nvim .
-	cp -rf $HOME/.config/fish .
-	cp -rf $HOME/.config/dunst .
-	cp -f $HOME/.xinitrc .
-	cp -f $HOME/.bashrc .
-	cp -f $HOME/.bash_profile .
-	cp -rf $HOME/.wallpapers .
-	cp -rf $HOME/.fonts .
-	cp -rf /usr/share/bumblebee-status .	
-	cp -rf /usr/share/X11/xorg.conf.d . ;;
+	cp -r $HOME/.config/i3 .
+	cp -r $HOME/.config/alacritty .
+	cp -r $HOME/.config/rofi .
+	cp -r $HOME/.config/picom .
+	cp -r $HOME/.config/nvim .
+	cp -r $HOME/.config/fish .
+	cp -r $HOME/.config/dunst .
+	cp -r $HOME/.config/gtk-3.0 .
+	cp $HOME/.xinitrc .
+	cp $HOME/.bashrc .
+	cp $HOME/.bash_profile .
+	cp -r $HOME/.wallpapers .
+	cp -r $HOME/.fonts .
+	cp -r $HOME/.icons .
+	cp -r /usr/share/bumblebee-status .	
+	cp -r /usr/share/X11/xorg.conf.d . ;;
 
 	# Copying to the system.
         2)
-	cp -rf i3/ $HOME/.config/
-	cp -rf alacritty/ $HOME/.config/
-	cp -rf rofi/ $HOME/.config/
-	cp -rf picom/ $HOME/.config/
-	cp -rf nvim/ $HOME/.config/
-	cp -rf fish/ $HOME/.config/
-	cp -rf dunst/ $HOME/.config/
-	cp -f .xinitrc $HOME
-	cp -f .bashrc $HOME
-	cp -f .bash_profile $HOME 
-	cp -rf .wallpapers $HOME 
-	cp -rf .fonts $HOME
-	cp -rf bumblebee-status/ /usr/share/ 
-	cp -rf xorg.conf.d/ /usr/share/X11/ ;;	
+	cp -r i3/ $HOME/.config/
+	cp -r alacritty/ $HOME/.config/
+	cp -r rofi/ $HOME/.config/
+	cp -r picom/ $HOME/.config/
+	cp -r nvim/ $HOME/.config/
+	cp -r fish/ $HOME/.config/
+	cp -r dunst/ $HOME/.config/
+	cp -r gtk-3.0/ $HOME/.config/
+	cp .xinitrc $HOME
+	cp .bashrc $HOME
+	cp .bash_profile $HOME 
+	cp -r .wallpapers $HOME 
+	cp -r .fonts $HOME
+	cp -r .icons $HOME
+	cp -r bumblebee-status/ /usr/share/ 
+	cp -r xorg.conf.d/ /usr/share/X11/ ;;	
 
 
 esac
