@@ -16,7 +16,7 @@ case $choice in
 	1)
 	xbps-install i3-gaps pulseaudio xorg xf86-video-intel alacritty chromium firefox xrandr arandr pavucontrol neovim python3 bumblebee-status feh rofi neofetch tlp chrony xinput qbittorrent p7zip compton fish-shell pulseaudio flameshot ;;
 	2) 
-	xbps-install i3-gaps pulseaudio xorg alacritty firefox xrandr arandr pavucontrol neovim python3 bumblebee-status feh rofi neofetch chrony xinput qbittorrent p7zip compton fish-shell libgcc-32bit libstdc++-32bit libdrm-32bit libglvnd-32bit steam nvidia nvidia-libs-32bit dunst flameshot ;; 
+	xbps-install i3-gaps pulseaudio xorg alacritty firefox xrandr arandr pavucontrol neovim python3 bumblebee-status feh rofi neofetch chrony xinput qbittorrent p7zip compton fish-shell libgcc-32bit libstdc++-32bit libdrm-32bit libglvnd-32bit steam nvidia nvidia-libs-32bit dunst flameshot cpupower;; 
 
 esac
 
